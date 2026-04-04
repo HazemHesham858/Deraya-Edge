@@ -1,53 +1,133 @@
-# Welcome to your Lovable project
+# Deraya-Edge 🎓
 
-## Project info
+منصة تعليمية وبحثية متقدمة تجمع بين المجتمع الأكاديمي والبحث العلمي والتعليم المستمر.
 
-**URL**: https://lovable.dev/projects/1169db3a-30f3-49bc-bd0b-9cda42ae0ebe
+## البدء السريع ⚡
 
-## How can I edit this code?
+### المتطلبات
+- Node.js 16+ و npm
+- Git
 
-There are several ways of editing your application.
+### التثبيت والتشغيل
 
-**Use Lovable**
+```bash
+# 1. تثبيت جميع الاعتماديات
+npm install
+cd server && npm install && cd ..
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1169db3a-30f3-49bc-bd0b-9cda42ae0ebe) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 2. في طرفية (Terminal 1) - تشغيل الفرونتند
 npm run dev
+
+# 3. في طرفية أخرى (Terminal 2) - تشغيل الباكند
+cd server
+npm start
 ```
 
-**Edit a file directly in GitHub**
+**سيكون التطبيق متاح على**: http://localhost:8080  
+**الـ API متاح على**: http://localhost:5000/api
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## دليل البدء التفصيلي 📖
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
+للحصول على شرح مفصل للإعداد والتطوير، اطلع على:
+- **[SETUP_GUIDE.md](./SETUP_GUIDE.md)** - دليل الإعداد الكامل
+- **[TROUBLESHOOTING.md](./TROUBLESHOOTING.md)** - حل المشاكل الشائعة
+
+---
+
+## كيفية تعديل الكود
+
+**استخدام Lovable** (محررك الأصلي)
+
+ببساطة زر [مشروع Lovable](https://lovable.dev/projects/1169db3a-30f3-49bc-bd0b-9cda42ae0ebe) وابدأ في التعديل.
+
+**استخدام محرر النصوص المفضل لديك**
+
+إذا أردت العمل محليًا، يمكنك استنساخ المستودع والمتابعة كالتالي:
+
+---
+
+## هيكل المشروع 📁
+
+```
+deraya-edge/
+├── src/                     # كود React
+│   ├── components/         # مكونات إعادة الاستخدام
+│   ├── pages/              # صفحات التطبيق
+│   ├── contexts/           # إدارة الحالة (State)
+│   ├── services/           # خدمات API
+│   └── integrations/       # التكاملات الخارجية
+├── server/                  # خادم Express
+│   ├── routes/             # مسارات API
+│   ├── models/             # نماذج قاعدة البيانات
+│   ├── config/             # التكوينات
+│   └── server.js           # نقطة الدخول
+├── public/                  # الملفات الثابتة
+└── package.json            # الاعتماديات
+```
+
+---
+
+## الميزات الرئيسية ✨
+
+- 🎓 إدارة الدورات والتعليم
+- 🔬 منصة البحث العلمي
+- 📚 مكتبة المقالات والموارد
+- 👥 المجتمع والتعاون
+- 🤖 روبوت الدردشة الذكي (Don Chatbot)
+- 🏆 نظام المشاريع والجوائز
+- 👔 برامج التدريب الداخلي
+
+---
+
+## أوامر مفيدة 🛠️
+
+```bash
+# تشغيل الفرونتند في وضع التطوير
+npm run dev
+
+# بناء الفرونتند للإنتاج
+npm run build
+
+# معاينة البناء
+npm run preview
+
+# فحص الأخطاء
+npm run lint
+
+# تشغيل الباكند
+cd server && npm start
+```
+
+---
+
+## التكاملات المستخدمة 🔗
+
+- **Supabase**: قاعدة البيانات والمصادقة
+- **Vercel**: الاستضافة والنشر
+- **Lucide Icons**: أيقونات الواجهة
+- **shadcn/ui**: مكونات الواجهة
+- **Tailwind CSS**: تنسيق الواجهة
+- **Framer Motion**: الرسوم المتحركة
+
+---
+
+## الدعم والمساعدة 💬
+
+هل تواجه مشاكل؟ جرب:
+1. قراءة [TROUBLESHOOTING.md](./TROUBLESHOOTING.md)
+2. فتح وحدة التحكم (F12) للبحث عن الأخطاء
+3. التحقق من أن كلا الخادمين يعملان
+4. إعادة تثبيت الاعتماديات
+
+---
+
+## الترخيص 📄
+
+هذا المشروع مرخص تحت MIT License.
+
+**آخر تحديث**: 5/4/2026
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
